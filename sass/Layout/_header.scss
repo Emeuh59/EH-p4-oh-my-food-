@@ -1,0 +1,8 @@
+header {
+    @include mobile__header;
+
+    img {
+        height: 44px;
+        max-width: 162px;
+    }
+}
