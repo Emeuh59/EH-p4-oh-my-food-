@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -72,7 +73,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -373,9 +375,36 @@ h1 {
   margin: 50px 20px 70px 20px;
 }
 
+/* à travailler!!!*/
+.main__page__instructions--number {
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: #9356DC;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+/* à travailler!!!*/
 .fa-solid.fa-location-dot {
   color: #353535;
   margin: 17px;
 }
 
-/*# sourceMappingURL=style.css.map */
+.fa-solid.fa-mobile-screen-button {
+  color: #353535;
+  margin: 17px;
+  width: 13px;
+  height: 20px;
+}
+
+.fa-solid.fa-list-ul {
+  color: #353535;
+  margin: 17px;
+  width: 16px;
+  height: 16px;
+}/*# sourceMappingURL=style.css.map */

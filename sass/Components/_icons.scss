@@ -2,3 +2,15 @@
     color: #353535;
     margin: 17px;
 }
+
+.fa-solid.fa-mobile-screen-button{
+    @include icon_main_page;
+    width: 13px;
+    height: 20px;
+}
+
+.fa-solid.fa-list-ul{
+    @include icon_main_page;
+    width: 16px;
+    height: 16px;
+}
