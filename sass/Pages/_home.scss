@@ -1,21 +1,19 @@
 .header__location{
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #EAEAEA;
     color:#353535;
     font-size: 16px;
-    justify-content: center;
-    align-items: center;
 }
 
 .main__page__subject{
-   background-color: #F6F6F6;
+   background-color: $color-primary;
    padding-top:40px;
    padding-bottom:50px;
-   display: flex;
+   @include flex_column;
    align-items: center;
-   flex-direction: column;
-
-   .main__page__subtitle{
+    .main__page__subtitle{
     @include h2;
     text-align: center;
     margin: 10px 30px 30px 30px;
@@ -23,20 +21,74 @@
 }
 
 .main__page__instructions{
-    margin:50px 20px 70px 20px;
+    margin:50px 20px 70px 30px;
+    li{
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .main__page__instructions--number{
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        padding: 3px 8px;
+        border-radius: 50%;
+        font-size: 16px;
+        background-color: #9356DC;
+        color:white;
+    }
 }
 
-/* à travailler!!!*/
-.main__page__instructions--number{
-    display:block;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    background-color: #9356DC;
-    color:white;
-}
-
-ul{
+.main__page__instructions ul{
     list-style: none;
+    font-weight:500;
+    font-size:16px;
+    padding:0;
+    li{
+        background-color: $color-primary;
+        border-radius: 20px;
+        margin-top:25px;
+        height:72px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    }
 }
-/* à travailler!!!*/
+
+.main__page__restaurant{
+    background-color: $color-primary;
+    padding:45px 20px 50px 20px;
+    .main__page__restaurant__cards{
+        width:100%;
+        @include flex_column;
+    }
+    a{
+        color:black;
+    }
+}
+
+.home__page__card{
+    box-shadow: 5px 5px 5px #F2F2F2;
+    background-color: white;
+    border-radius: 15px;
+    width:100%;
+    height:250px;
+    margin-bottom:15px;
+    img{
+        width:100%;
+        height:180px;
+        border-radius: 15px 15px 0px 0px;
+        object-fit: cover;
+    }
+}
+
+.home__page__card__content{
+display:flex;
+    .home__page__card__txt{
+        width:85%;
+    }
+    .home__page__card__title{
+        @include title;
+    }
+    .home__page__card__subtitle{
+        @include subtitle;
+    }
+}

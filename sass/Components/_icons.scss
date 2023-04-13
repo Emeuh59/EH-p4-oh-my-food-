@@ -14,3 +14,20 @@
     width: 16px;
     height: 16px;
 }
+
+.fa-solid.fa-store{
+    @include icon_main_page;
+    width: 18px;
+    height: 18px;
+}
+
+.home__page__new{
+    position: absolute;
+    background-color: #99E2D0;
+    color: #008766;
+    text-align: center;
+    font-size: 14px;
+    width:80px;
+    height:30px;
+    margin: 15px 15px 130px 250px;
+}

@@ -1,0 +1,24 @@
+footer{
+    background-color: #363636;
+    padding: 0 0 30px 25px;
+    color: white;
+    h4{
+        font-family: "Shrikhand";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 70px;
+        margin:0;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        list-style: none;
+        padding:0;
+        margin:0;
+    }
+    a{
+        color:white;
+    }
+}
+

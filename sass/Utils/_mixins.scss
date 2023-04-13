@@ -22,6 +22,26 @@
 }
 
 @mixin icon_main_page{
-    color: #353535;
-    margin: 17px;
+    color: #7E7E7E;
+    margin-left: 35px;
+    margin-right: 25px;
+}
+
+@mixin title{
+    font-size: 18px;
+    padding-left:15px;
+    padding-top:12px;
+    font-weight: 700;
+}
+
+@mixin subtitle{
+    font-size: 15px;
+    padding-left: 15px;
+    padding-top:5px;
+    font-weight: 300;
+}
+
+@mixin flex_column{
+    display: flex;
+    flex-direction: column;
 }
