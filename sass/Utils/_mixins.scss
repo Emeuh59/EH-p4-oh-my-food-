@@ -15,7 +15,7 @@
     border:none;
 }
 
-@mixin h2{
+@mixin h2_main_page{
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -44,4 +44,11 @@
 @mixin flex_column{
     display: flex;
     flex-direction: column;
+}
+
+@mixin h2_menu{
+    font-family:Shrikhand;
+    font-weight:400;
+    font-style: italic;
+    font-size:28px;
 }

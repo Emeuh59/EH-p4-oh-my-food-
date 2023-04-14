@@ -7,6 +7,10 @@
     font-size: 16px;
 }
 
+.h2__main__page{
+    @include h2_main_page;
+}
+
 .main__page__subject{
    background-color: $color-primary;
    padding-top:40px;
@@ -14,7 +18,7 @@
    @include flex_column;
    align-items: center;
     .main__page__subtitle{
-    @include h2;
+    @include h2_main_page;
     text-align: center;
     margin: 10px 30px 30px 30px;
    }

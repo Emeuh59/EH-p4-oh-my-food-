@@ -390,6 +390,12 @@ footer a {
   font-size: 16px;
 }
 
+.h2__main__page {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+}
+
 .main__page__subject {
   background-color: #F6F6F6;
   padding-top: 40px;
@@ -525,4 +531,15 @@ footer a {
   width: 80px;
   height: 30px;
   margin: 15px 15px 130px 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.menu__title {
+  font-family: Shrikhand;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 28px;
 }/*# sourceMappingURL=style.css.map */
