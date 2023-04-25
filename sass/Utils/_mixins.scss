@@ -46,9 +46,15 @@
     flex-direction: column;
 }
 
-@mixin h2_menu{
+@mixin h1_menu{
     font-family:Shrikhand;
     font-weight:400;
     font-style: italic;
     font-size:28px;
+}
+
+@mixin h2_menu{
+    font-style: roboto;
+    font-weight:300;
+    font-size:16px;
 }
