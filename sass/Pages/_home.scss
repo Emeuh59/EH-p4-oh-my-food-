@@ -96,3 +96,27 @@ display:flex;
         @include subtitle;
     }
 }
+
+/*degradé du coeur au survol*/
+
+.card__heart{
+    i{
+    position:absolute;
+    font-size: 24px;
+    margin: -60px 0 0 280px;
+    transition:all 0.6s ease-in-out  ;
+    }
+}
+
+.__fullheart{
+opacity:0;
+background-image: linear-gradient(#FF79DA, #9356DC);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-background-clip: text;
+-moz-text-fill-color: transparent;
+}
+:hover.__fullheart{
+opacity:1;
+}
+

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -323,6 +324,22 @@ template {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 
+.command__button {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  Width: 186px;
+  Height: 50px;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  border-radius: 25px;
+  border: none;
+  margin-left: 95px;
+  margin-bottom: 40px;
+}
+.command__button:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+}
+
 header {
   text-align: center;
   margin-top: 14px;
@@ -331,6 +348,16 @@ header {
 header img {
   height: 44px;
   max-width: 162px;
+}
+
+.home__return {
+  position: absolute;
+  display: block;
+  margin: 15px 335px 23px 23px;
+}
+.home__return i {
+  width: 17px;
+  height: 16px;
 }
 
 body {
@@ -497,6 +524,27 @@ footer a {
   font-weight: 300;
 }
 
+/*degradé du coeur au survol*/
+.card__heart i {
+  position: absolute;
+  font-size: 24px;
+  margin: -60px 0 0 280px;
+  transition: all 0.6s ease-in-out;
+}
+
+.__fullheart {
+  opacity: 0;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+:hover.__fullheart {
+  opacity: 1;
+}
+
 .fa-solid.fa-location-dot {
   color: #353535;
   margin: 17px;
@@ -572,6 +620,7 @@ footer a {
   font-style: roboto;
   font-weight: 300;
   font-size: 16px;
+  margin: 0;
 }
 .menu__section hr {
   width: 40px;
@@ -607,7 +656,7 @@ footer a {
   font-weight: 400;
   font-style: italic;
   font-size: 28px;
-  margin: 0;
+  margin-left: 5px;
 }
 
 span {
@@ -617,4 +666,29 @@ span {
 
 .check {
   display: none;
+}
+
+.like__heart {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.like__heart i {
+  position: absolute;
+  font-size: 24px;
+  margin-left: 300px;
+  transition: all 0.6s ease-in-out;
+}
+
+.__fullheart {
+  opacity: 0;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+:hover.__fullheart {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

@@ -58,7 +58,7 @@
 
 .menu__title{
     @include h1_menu;
-    margin:0;
+    margin-left: 5px;
 }
 
 span{
@@ -68,5 +68,29 @@ span{
 
 .check{
     display: none;
+}
+
+.like__heart{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    i{
+        position:absolute;
+        font-size: 24px;
+        margin-left:300px;
+        transition:all 0.6s ease-in-out;
+    }
+}
+
+.__fullheart{
+  opacity:0;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ -moz-background-clip: text;
+ -moz-text-fill-color: transparent;
+}
+:hover.__fullheart{
+    opacity:1;
 }
 
