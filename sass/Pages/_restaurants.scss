@@ -1,3 +1,16 @@
+.one {
+    animation: slide__menu 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+}
+.two {
+    animation: slide__menu 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+    animation-delay: 1s;
+}
+.three {
+    animation: slide__menu 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+    animation-delay: 1.5s;
+}
+
+
 .restaurant__page{
     main{
         background:$color-primary;
@@ -39,7 +52,6 @@
         margin-top: 12px;
         position:relative;
         overflow: hidden;
-        animation: menu__incoming 3s;
     }
 }
 
@@ -52,6 +64,8 @@
     margin-left: 15px;
     overflow: hidden;
     width:80%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     & h3{
         font-style: roboto;
         font-weight:500;
@@ -73,26 +87,33 @@
 }
 
 .dish__name{
-    &span{
-        display: flex;
-        align-items: flex-end;
-        margin-left: auto;
-        padding:15px 15px 15px 0px;}
+    .dish__price{
+        text-align: right;
+        width: 20%;
+        padding: 35px 10px 0 10px;
+    }
     &:hover{
-            margin-right: 0;
+        .check{
+            width: 60px;
+            transform: scaleX(1);
+            i{
+                display: inline;
+            }
+        }
     }
 }
 
 
 .check{
     background-color: #99E2D0;
-    width: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: -60px;
+    width: 0;
     border-radius: 0 20px 20px 0;
-    transition: all 0.6s ease-in-out;
+    transform: scaleX(0);
+    transition: width 600ms 150ms ease-in-out;
+    transform-origin: right;
     i {
         color: #FFF;
         display: none;
