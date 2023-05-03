@@ -11,7 +11,11 @@
     }
 }
 
-.command__button{
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .command__button{
     @include button;
     margin-bottom: 40px;
     transform: scale(1);
@@ -22,4 +26,5 @@
       transform: scale(1.01);
       filter: brightness(105%);
     }
+  }
 }

@@ -123,3 +123,74 @@ background-image: linear-gradient(#FF79DA, #9356DC);
 opacity:1;
 }
 
+@media (min-width: 768px) {}
+
+
+
+
+@media (min-width: 992px) {
+    header {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        img {
+            height: 34px;
+            max-width: 200px;
+        }
+    }
+
+    .main__page__subject{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        h1{
+            font-size: 40px;
+        }
+        .main__page__subtitle{
+           margin-top: 18px; 
+           margin-bottom: 18px;
+        }
+    }
+
+    .main__page__instructions{
+        margin-left: 180px;
+        ul{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 35px;
+            li{
+                width: 322px;
+            }
+        } 
+    }
+
+    .main__page__restaurant{
+        padding-top: 30px;
+        .h2__main__page{
+            margin-left: 180px;
+        }
+        .main__page__restaurant__cards{
+            margin-left: 180px;
+            margin-right: 180px;
+            gap:90px;
+            width: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    footer {
+        padding: 65px 25px 30px 180px;
+        display: flex;        
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        .h2__footer{
+            margin-left: 80px;
+        }
+        ul{
+            flex-direction: row;
+            align-items: center;
+            gap:40px;
+        }
+          }
+
+}
