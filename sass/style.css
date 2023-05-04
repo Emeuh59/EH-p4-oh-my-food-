@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -309,6 +308,50 @@ template {
   display: none;
 }
 
+.loader_container {
+  position: absolute;
+  z-index: 3;
+  background: #D2D2D2;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loader__end 0.5s ease-out 3s both;
+}
+
+.dot {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  margin-left: 30px;
+  animation: loader infinite 0.6s alternance;
+}
+
+.two {
+  animation-delay: 0.2s;
+}
+
+.three {
+  animation-delay: 0.4s;
+}
+
+@keyframes loader {
+  100% {
+    transform: translate(Y) -25px;
+  }
+}
+@keyframes loader__end {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -3;
+  }
+}
 .main__page__button {
   font-size: 16px;
   font-weight: 500;
@@ -331,6 +374,7 @@ template {
 }
 
 .btn {
+  background: #F6F6F6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -345,6 +389,7 @@ template {
   border-radius: 25px;
   border: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  margin-top: 40px;
   margin-bottom: 40px;
   transform: scale(1);
   transition-property: transform;
@@ -376,6 +421,16 @@ header img {
   height: 16px;
 }
 
+@media (min-width: 992px) {
+  header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  header img {
+    height: 34px;
+    max-width: 200px;
+  }
+}
 body {
   font-family: roboto;
   width: 100%;
@@ -428,6 +483,24 @@ footer a {
   color: white;
 }
 
+@media (min-width: 992px) {
+  footer {
+    height: 114px;
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+  footer .h2__footer {
+    margin-left: 80px;
+    padding: 57px 25px 30px 0;
+  }
+  footer ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+}
 .header__location {
   display: flex;
   justify-content: center;
@@ -540,7 +613,6 @@ footer a {
   font-weight: 300;
 }
 
-/*degradé du coeur au survol*/
 .card__heart i {
   position: absolute;
   font-size: 24px;
@@ -563,14 +635,6 @@ footer a {
 }
 
 @media (min-width: 992px) {
-  header {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  header img {
-    height: 34px;
-    max-width: 200px;
-  }
   .main__page__subject {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -579,8 +643,8 @@ footer a {
     font-size: 40px;
   }
   .main__page__subject .main__page__subtitle {
-    margin-top: 18px;
-    margin-bottom: 18px;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
   .main__page__instructions {
     margin-left: 180px;
@@ -607,20 +671,6 @@ footer a {
     width: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-  footer {
-    padding: 65px 25px 30px 180px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-  }
-  footer .h2__footer {
-    margin-left: 80px;
-  }
-  footer ul {
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
   }
 }
 .fa-solid.fa-location-dot {
@@ -683,7 +733,7 @@ footer a {
 }
 
 .restaurant__page main {
-  background: #F6F6F6;
+  background: white;
   width: 100%;
 }
 .restaurant__page main img {
@@ -778,6 +828,7 @@ footer a {
 }
 
 .check {
+  font-size: 20px;
   background-color: #99E2D0;
   display: flex;
   align-items: center;
@@ -795,7 +846,6 @@ footer a {
 
 .like__heart {
   display: flex;
-  justify-content: space-between;
   gap: 40px;
 }
 .like__heart i {
@@ -819,7 +869,32 @@ footer a {
   opacity: 1;
 }
 
-/* a retravailler*/
+@media (min-width: 992px) {
+  header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  header img {
+    height: 34px;
+    max-width: 200px;
+  }
+  .menu {
+    margin-right: 200px;
+    margin-left: 200px;
+  }
+  .menu .menu__section {
+    width: 80%;
+  }
+  .like__heart i {
+    right: 200px;
+  }
+  .btn {
+    width: 80%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+}
 @keyframes slide__menu {
   0% {
     transform: translateY(200px);

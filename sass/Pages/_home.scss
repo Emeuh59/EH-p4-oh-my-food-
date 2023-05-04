@@ -1,3 +1,5 @@
+
+
 .header__location{
     display: flex;
     justify-content: center;
@@ -99,7 +101,6 @@ display:flex;
     }
 }
 
-/*degradé du coeur au survol*/
 
 .card__heart{
     i{
@@ -123,21 +124,8 @@ background-image: linear-gradient(#FF79DA, #9356DC);
 opacity:1;
 }
 
-@media (min-width: 768px) {}
-
-
-
 
 @media (min-width: 992px) {
-    header {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        img {
-            height: 34px;
-            max-width: 200px;
-        }
-    }
-
     .main__page__subject{
         padding-top: 30px;
         padding-bottom: 30px;
@@ -145,8 +133,8 @@ opacity:1;
             font-size: 40px;
         }
         .main__page__subtitle{
-           margin-top: 18px; 
-           margin-bottom: 18px;
+           margin-top: 25px; 
+           margin-bottom: 25px;
         }
     }
 
@@ -177,20 +165,5 @@ opacity:1;
             grid-template-columns: 1fr 1fr;
         }
     }
-
-    footer {
-        padding: 65px 25px 30px 180px;
-        display: flex;        
-        flex-direction: row-reverse;
-        justify-content: flex-start;
-        .h2__footer{
-            margin-left: 80px;
-        }
-        ul{
-            flex-direction: row;
-            align-items: center;
-            gap:40px;
-        }
-          }
 
 }

@@ -13,7 +13,7 @@
 
 .restaurant__page{
     main{
-        background:$color-primary;
+        background:white;
         width:100%;
         & img {
             width: 100%;
@@ -105,6 +105,7 @@
 
 
 .check{
+    font-size: 20px;
     background-color: #99E2D0;
     display: flex;
     align-items: center;
@@ -123,7 +124,6 @@
 
 .like__heart{
     display: flex;
-    justify-content: space-between;
     gap: 40px;
     i{
         position:absolute;
@@ -145,6 +145,38 @@ background-image: linear-gradient(#FF79DA, #9356DC);
 :hover.__fullheart{
     opacity:1;
 }
-/* a retravailler*/
 
 
+
+
+@media (min-width: 992px) {
+    header {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    img {
+        height: 34px;
+        max-width: 200px;
+    }
+    }
+
+    .menu{
+        margin-right: 200px;
+        margin-left: 200px;
+        .menu__section {
+            width: 80%;
+        }
+    }
+
+    .like__heart{
+        i{
+            right:200px;
+        }
+    }
+
+    .btn{
+        width:80%;
+        margin:0;
+        display: flex;
+        align-items: center;
+    }
+}
