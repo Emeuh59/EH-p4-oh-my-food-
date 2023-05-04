@@ -57,6 +57,12 @@
         margin-top:25px;
         height:72px;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        &:hover{
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+            i{
+            color: #9356DC;
+            }
+        }
     }
 }
 
@@ -122,6 +128,9 @@ background-image: linear-gradient(#FF79DA, #9356DC);
 }
 :hover.__fullheart{
 opacity:1;
+}
+
+@media (min-width: 768px) {
 }
 
 
