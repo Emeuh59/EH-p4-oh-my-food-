@@ -21,24 +21,30 @@
 }
 
 .dot {
+  opacity: 0;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  animation: loader infinite 0.6s;
+  animation: loader ease-in-out 2.5s;
 }
 
-.two {
-  animation-delay: 0.2s;
-}
-
-.three {
+.dottwo {
   animation-delay: 0.4s;
 }
 
+.dotthree {
+  animation-delay: 0.8s;
+}
+
 @keyframes loader {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
   100% {
-    transform: translateY -25px;
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 @keyframes loader__end {
@@ -124,8 +130,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -609,8 +614,7 @@ footer a {
   width: 100%;
   height: 180px;
   border-radius: 15px 15px 0px 0px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .home__page__card__content {
@@ -758,8 +762,7 @@ footer a {
 .restaurant__page main img {
   width: 100%;
   height: 270px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .restaurant__page main .menu {
   display: flex;
@@ -779,6 +782,7 @@ footer a {
   flex-direction: column;
 }
 .menu__section h2 {
+  font-style: roboto;
   font-weight: 300;
   font-size: 16px;
   margin: 0;
@@ -926,4 +930,6 @@ footer a {
     transform: translateY(0);
     opacity: 1;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
